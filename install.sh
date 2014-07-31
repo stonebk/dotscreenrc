@@ -8,13 +8,18 @@ go()
     echo "Installed."
 }
 
+# Already exists
 if [ -a ~/.screenrc ]; then
     read -p "Overwrite existing .screenrc file? " response
     case $response in
         [Yy]*)
-            go;;
+            go
+            exit;;
         *)
             echo "Aborted."
             exit;;
     esac
 fi
+
+# Does not exist
+go
