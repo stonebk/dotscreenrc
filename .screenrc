@@ -11,7 +11,7 @@ termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 defbce "on"
 
 # define a bigger scrollback, default is 100 lines
-defscrollback 1024
+defscrollback 200000
 
 # Change escape sequence from C-a to C-j
 escape ^Jj
